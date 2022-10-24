@@ -1,0 +1,22 @@
+<div class="show_all">
+    <div class="show1">
+        <div class="show1a">
+            <% if flash[:notice] %>
+              <p class="update_notice"><%= flash[:notice] %></p>
+            <% end %>
+        </div>
+        <div class="show1b">
+            <span class="show_tb">Title: </span>
+            <span><%= @book.title %></span>
+        </div>
+        <div class="show1c">
+            <span class="show_tb">Body: </span>
+            <span>Body: <%= @book.body %></span>
+        </div>
+
+    </div>
+
+    <%=link_to "Edit", edit_book_path(@book.id) %>
+    <nobr>|</nobr>
+    <%= link_to "Back", books_path %>
+</div>

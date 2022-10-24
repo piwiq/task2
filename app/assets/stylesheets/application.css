@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.index1, .index2{
+  margin: 20px 0;
+}
+.index_all{
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px 33px;
+}
+
+.ha{
+  width: 800px;
+  display: flex;
+  /*justify-content: center;*/
+  /*background-color: blue;*/
+}
+.t_title{
+  width: 170px;
+  padding-right: 10px;
+  /*background-color: yellow;*/
+}
+.r_flex{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.r_title{
+
+
+}
+.t_body{
+  width: 370px;
+  padding-right: 10px;
+  /*background-color: red;*/
+
+}
+.r_body{
+
+}
+.t_button{
+  width: 160px;
+  /*background-color: green;*/
+
+}
+.l_tb{
+  /*display: flex;*/
+  /*vertical-align: inherit;*/
+  /*font-weight: bold;*/
+  text-align: center;
+  line-height: 3;
+}
+.button{
+  padding: 0 5px;
+}
+
+.index_error{
+  margin-bottom: 10px;
+}
+.xx{
+  margin: 5px 0;
+}
+
+
+
+
+
+
+.top_all{
+  width: 500px;
+  margin: 20px 0 0 20px;
+}
+.top1{
+  margin: 20px;
+}
+.top_p{
+  margin-bottom: 20px;
+}
+
+
+
+.show_all{
+  margin: 30px 0 0 30px;
+}
+.show1{
+  margin: 15px 0 0 15px;
+}
+.show_tb{
+  font-weight: bold;
+}
+.show1a, .show1b, .show1c{
+  margin-bottom: 20px;
+}
+
+
+
+.edit_all{
+  margin: 30px 0 0 30px;
+}
+.edit_body{
+  margin-top: 10px;
+}
+.edit_title_text{
+  margin-top: 15px;
+}
+.update_button{
+  margin-bottom:  5px;
+}
