@@ -1,39 +1,41 @@
 <div class="index_all">
 
+  <div>
+      <% if flash[:notice] %>
+        <p class="destroy_notice"><%= flash[:notice] %></p>
+      <% end %>
+  </div>
+
   <h1>Books</h1>
   <div class="index1">
-    <div class="ha">
 
-      <div class="t_title">
-        <h4 class="l_tb">Title</h4>
-        <div class="r_flex">
-          <% @books.each do |book| %>
-            <p class="r_title"><%= book.title %></p>
-          <%end%>
-        </div>
+    <table class="ha">
+      <div class="ld_tbs">
+      <tr>
+        <th class="l_tb">Title</th>
+        <th class="l_tb">Body</th>
+        <th class="l_tb"><br></th>
+      </tr>
       </div>
 
-      <div class="t_body">
-        <h4 class="l_tb">Body</h4>
-        <div class="r_flex">
-          <% @books.each do |book| %>
-            <p class="r_body"><%= book.body %></p>
-          <%end%>
-        </div>
+
+
+      <div class="ld_tbs">
+        <% @books.each do |book| %>
+          <tr>
+            <td><%= book.title %></td>
+            <td><%= book.body %></td>
+            <td><span>
+              <a class="button"><%= link_to 'Show', book_path(book.id) %></a>
+              <a class="button"><%= link_to 'Edit', edit_book_path(book.id) %></a>
+              <a class="button"><%= link_to 'Destroy', book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %></a>
+            </span></td>
+          </tr>
+        <%end%>
       </div>
 
-      <div class="t_button">
-        <h4 class="l_tb"><br></h4>
-        <!--<div class="r_flex">-->
-          <% @books.each do |book| %>
-            <a class="button"><%= link_to 'Show', book_path(book.id) %></a>
-            <a class="button"><%= link_to 'Edit', edit_book_path(book.id) %></a>
-            <a class="button"><%= link_to 'Destroy', book_path(book.id),method: :delete, "data-confirm" => "Are you sure?" %></a><br>
-          <%end%>
-        <!--</div>-->
-      </div>
+    </table>
 
-    </div>
   </div>
 
 
