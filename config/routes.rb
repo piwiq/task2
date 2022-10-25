@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'homes#top'
 
-  #不要get 'books/new' => 'books#new'
+  #get 'books/new' => 'books#new'
 
   #get 'books' => 'books#index'#start button用"
   #post 'books' => 'books#create'
